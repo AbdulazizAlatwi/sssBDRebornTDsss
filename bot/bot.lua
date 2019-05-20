@@ -1,5 +1,5 @@
 -- #Beyond Reborn Robot
--- #@BeyondTeam
+-- #@AbdulazizAlatwi
 package.path = package.path .. ';.luarocks/share/lua/5.2/?.lua'.. ';.luarocks/share/lua/5.2/?/init.lua'
 package.cpath = package.cpath .. ';.luarocks/lib/lua/5.2/?.so'
 tdbot = dofile('./td/tdbot.lua')
@@ -124,30 +124,7 @@ function create_config( )
     admins = {},
     disabled_channels = {},
     moderation = {data = './data/moderation.json'},
-    info_text = [[》BDReborn (TDBot Branch) V2
-An advanced administration bot based on Beyond Reborn V6 updated for https://valtman.name/telegram-bot
-
-》https://github.com/BeyondTeam/BDReborn
-
-》Admins :
-》@SoLiD ➣ Founder & Developer《
-》@ToOfan ➣ Developer《
-》@Xamarin_Developer ➣ Developer《
-》 MAKAN ➣ Developer《
-》@SenatorHost ➣ Sponsor《
-
-》Special thanks to :
-》@kuncen
-》@Vysheng
-》@MrHalix
-》Beyond Team Members
-
-》Our channel :
-》@BeyondTeam《
-
-》Our website :
-》http://Beyond-Dev.iR
-]],
+    info_text = [[@AbdulazizAlatwi]],
   }
 	serialize_to_file(config, './data/config.lua')
 	print ('saved config into config.lua')
