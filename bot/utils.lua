@@ -780,7 +780,7 @@ local lang = redis:get(hash)
   if not lang then
     return '_Group is not added_'
 else
-    return 'گروه به لیست گروه های مدیریتی ربات اضافه نشده است'
+    return 'المجموعة غير مضافة'
    end
   end
   -- determine if table is empty
@@ -865,7 +865,7 @@ local lang = redis:get(hash)
   if not lang then
     return '_Group is not added_'
 else
-    return 'گروه به لیست گروه های مدیریتی ربات اضافه نشده است'
+    return 'المجموعة غير مضافة'
    end
   end
   if not data[tostring(chat_id)]['whitelist'] then
@@ -932,7 +932,7 @@ local lang = redis:get(hash)
   if not lang then
     return '_Group is not added_'
 else
-    return 'گروه به لیست گروه های مدیریتی ربات اضافه نشده است'
+    return 'المجموعة غير مضافة'
    end
   end
   -- determine if table is empty

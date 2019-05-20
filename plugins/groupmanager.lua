@@ -6,7 +6,7 @@ local lang = redis:get(hash)
    if not lang then
         return '_You are not bot admin_'
 else
-     return 'شما مدیر ربات نمیباشید'
+     return 'أنت لست مشرفا'
     end
 end
     local data = load_data(_config.moderation.data)
@@ -14,7 +14,7 @@ end
 if not lang then
    return '_Group is already added_'
 else
-return 'گروه در لیست گروه های مدیریتی ربات هم اکنون موجود است'
+return 'المجموعة مضافة من قبل'
   end
 end
         -- create data array in moderation.json
@@ -76,7 +76,7 @@ end
     if not lang then
   return '*Group has been added*'..msg_caption
 else
-  return 'گروه با موفقیت به لیست گروه های مدیریتی ربات افزوده شد'..msg_caption
+  return 'تم اضافة المجموعة'..msg_caption
 end
 end
 
@@ -88,7 +88,7 @@ local lang = redis:get(hash)
      if not lang then
         return '_You are not bot admin_'
    else
-        return 'شما مدیر ربات نمیباشید'
+        return 'أنت لست مشرفا'
     end
    end
     local data = load_data(_config.moderation.data)
@@ -97,7 +97,7 @@ local lang = redis:get(hash)
   if not lang then
     return '_Group is not added_'
 else
-    return 'گروه به لیست گروه های مدیریتی ربات اضافه نشده است'
+    return 'المجموعة غير مضافة'
    end
   end
 
@@ -112,7 +112,7 @@ else
  if not lang then
   return '*Group has been removed*'
  else
-  return 'گروه با موفیت از لیست گروه های مدیریتی ربات حذف شد'
+  return 'تم الخروج من المجموعة'
 end
 end
 
@@ -128,7 +128,7 @@ if data[tostring(msg.to.id)]['filterlist'][(word)] then
    if not lang then
          return "_Word_ *"..word.."* _is already filtered_"
             else
-         return "_کلمه_ *"..word.."* _از قبل فیلتر بود_"
+         return "_كلمة_ *"..word.."* _مفلترة من قبل_"
     end
 end
    data[tostring(msg.to.id)]['filterlist'][(word)] = true
@@ -136,7 +136,7 @@ end
    if not lang then
          return "_Word_ *"..word.."* _added to filtered words list_"
             else
-         return "_کلمه_ *"..word.."* _به لیست کلمات فیلتر شده اضافه شد_"
+         return "_كلمة_ *"..word.."* _تم اضافتها للكلمات المفلترة_"
     end
 end
 
@@ -154,13 +154,13 @@ local lang = redis:get(hash)
        if not lang then
          return "_Word_ *"..word.."* _removed from filtered words list_"
        elseif lang then
-         return "_کلمه_ *"..word.."* _از لیست کلمات فیلتر شده حذف شد_"
+         return "_كلمة_ *"..word.."* _تم مسحها من الكلمات المفلترة_"
      end
       else
        if not lang then
          return "_Word_ *"..word.."* _is not filtered_"
        elseif lang then
-         return "_کلمه_ *"..word.."* _از قبل فیلتر نبود_"
+         return "_كلمة_ *"..word.."* _غير مفلترة_"
       end
    end
 end
@@ -174,7 +174,7 @@ local lang = redis:get(hash)
   if not lang then
     return "_Group is not added_"
  else
-    return "گروه به لیست گروه های مدیریتی ربات اضافه نشده است"
+    return "المجموعة غير مضافة"
   end
  end
   -- determine if table is empty
@@ -207,7 +207,7 @@ local lang = redis:get(hash)
 if not lang then
     return "_Group is not added_"..msg_caption
 else
-return "گروه به لیست گروه های مدیریتی ربات اضافه نشده است"
+return "المجموعة غير مضافة"
   end
 end
   -- determine if table is empty

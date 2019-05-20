@@ -683,9 +683,9 @@ if is_sudo(msg) then
 					redis:set('CheckExpire::'..msg.to.id,true)
 				end
 				if lang then
-					tdbot.sendMessage(msg.to.id, msg.id, 1, '_گروه به مدت 3 دقیقه برای اجرای تنظیمات شارژ میباشد._', 1, 'md')
+					tdbot.sendMessage(msg.to.id, msg.id, 1, '.3.', 1, 'md')
 				else
-					tdbot.sendMessage(msg.to.id, msg.id, 1, '_Group charged 3 minutes  for settings._', 1, 'md')
+					tdbot.sendMessage(msg.to.id, msg.id, 1, '.3.', 1, 'md')
 				end
 		end
 		if ((matches[1] == 'rem' and not Clang) or (matches[1] == "حذف گروه" and Clang)) then
