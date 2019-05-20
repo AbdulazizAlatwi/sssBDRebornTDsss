@@ -7,7 +7,8 @@
 ```sh
 # Let's install the bot.
 cd $HOME
-git clone https://github.com/BeyondTeam/BDReborn.git -b TDBot
+git clone https://github.com/AbdulazizAlatwi/sssBDRebornTDsss.git
+mv sssBDRebornTDsss BDReborn
 cd BDReborn
 chmod +x beyond.sh
 ./beyond.sh install
@@ -70,7 +71,7 @@ tmux
 
 ### Our Telegram channel
 
-[@BeyondTeam](https://telegram.me/BeyondTeam)
+[@AbdulazizAlatwi](https://telegram.me/AbdulazizAlatwi)
 
 ### Our Web Site:
 
